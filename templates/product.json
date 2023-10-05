@@ -127,10 +127,41 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "mxpr-product-reviews": {
+      "type": "apps",
+      "blocks": {
+        "mxpr_product_review_block": {
+          "type": "shopify:\/\/apps\/prime-review\/blocks\/mxpr-product-reviews\/f16f27f6-be6f-4f94-921b-9a297092286b",
+          "settings": {
+            "list_count": 5,
+            "stars_fill_color": "#FFD900",
+            "star_size": 24,
+            "border_color": "#dddddd",
+            "border_size": 0,
+            "border_radius": 5,
+            "margin_y": 0,
+            "margin_x": 0,
+            "margin_auto": true,
+            "padding_y": 20,
+            "padding_x": 20,
+            "title_size": 24,
+            "show_detail": true,
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "mxpr_product_review_block"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
+    "mxpr-product-reviews",
     "related-products",
     "1682409919a9cbd7eb"
   ]
