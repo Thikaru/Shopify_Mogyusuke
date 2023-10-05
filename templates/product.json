@@ -179,10 +179,38 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "mxpr-qanda": {
+      "type": "apps",
+      "blocks": {
+        "mxpr_qanda_block": {
+          "type": "shopify:\/\/apps\/prime-review\/blocks\/mxpr-qanda\/f16f27f6-be6f-4f94-921b-9a297092286b",
+          "settings": {
+            "border_color": "#dddddd",
+            "border_size": 0,
+            "border_radius": 5,
+            "margin_y": 0,
+            "margin_x": 0,
+            "margin_auto": true,
+            "padding_y": 20,
+            "padding_x": 20,
+            "heading": "Q&A",
+            "title_size": 24,
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "mxpr_qanda_block"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
+    "mxpr-qanda",
     "mxpr-product-reviews",
     "related-products",
     "1682409919a9cbd7eb"
