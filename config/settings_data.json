@@ -151,6 +151,28 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "3720565183479497137": {
+        "type": "shopify:\/\/apps\/globo-product-options-variant\/blocks\/app-embed-block\/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "13955544766352705895": {
+        "type": "shopify:\/\/apps\/easypoints\/blocks\/widget\/f0862409-7105-4920-b523-5bd76a964d4a",
+        "disabled": false,
+        "settings": {
+          "theme": "inherit",
+          "widget_title": "",
+          "primary_color": "#401dba",
+          "gradient_checkbox": true,
+          "box_shadow": true,
+          "enable_emoji": false,
+          "position": "right",
+          "border_radius": 4,
+          "bottom_spacing": 16,
+          "horizontal_spacing": 16
+        }
       }
     }
   },
