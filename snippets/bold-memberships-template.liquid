@@ -6,6 +6,25 @@
 
 {% assign mem_current_template = template %}
 
+{% if '404.templates/404' == mem_current_template %}
+    {% assign bold_membership_full_redirect = true %}
+    {% assign bold_membership_template = '404' %}
+{% endif %}
+
+{% if customer.tags contains 'gold-tag' %}
+
+	{% if '404' == mem_current_template %}
+         {% assign bold_membership_partial_redirect = true %}
+         {% assign bold_membership_template = 'templates/404' %}
+   {% endif %}
+
+	{% if '404.templates/404' == mem_current_template %}
+         {% assign bold_membership_partial_redirect = false %}
+         {% assign bold_membership_full_redirect = false %}
+   {% endif %}
+
+{% endif %}
+
 {%if bold_membership_partial_redirect == true %}
 	<script>
 	let reloadLocation = window.location.href;
