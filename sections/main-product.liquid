@@ -1,3 +1,7 @@
+<!-- Bold: Memberships (product) -->
+{% include 'bold_mem_helper' with 'product' %}
+<!-- end Bold code -->
+
 <section
   id="MainProduct-{{ section.id }}"
   class="page-width section-{{ section.id }}-padding"
@@ -90,6 +94,14 @@
                 </a>
               </div>
             {%- when 'price' -%}
+
+            <!-- Bold: Memberships (collection/product prices) -->
+{% assign bold_mem = false %}{% assign bold_hide = false %}
+{% for bold_rule in product.metafields.bold_mem_price %}
+	{% if customer.tags contains bold_rule.first %}
+      {% if bold_rule.last == "hide" %}{% assign bold_tag = bold_rule.first %}{% assign bold_hide = true %}{% break %}{% endif %}{% if bold_rule.last == "show" %}{% assign bold_hide = false %}{% break %}{% endif %}
+    {% else %}{% if bold_rule.last contains "show" %}{% assign bold_tag = bold_rule.first %}{% assign bold_hide = true %}{% elsif bold_rule.last contains "hide" %}{% assign bold_hide = false %}{% endif %}{% endif %}
+{% endfor %}{% if bold_hide == true %}{% assign bold_noaccess_snippet = 'bold-memberships-noaccess-' | append: bold_tag %}{% else %}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price',
                   product: product,
@@ -115,6 +127,8 @@
                   {{ form | payment_terms }}
                 {%- endform -%}
               </div>
+  {% endif %}
+<!-- end Bold code -->
             {%- when 'inventory' -%}
               <p
                 class="product__inventory no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
@@ -377,7 +391,7 @@
                               <ul class="list-unstyled" role="list">
                                 {%- for product in recommendations.products limit: block.settings.products_per_page offset: continue -%}
                                   <li>
-                                    {% render 'card-product',
+                                    {% include 'card-product',
                                       card_product: product,
                                       media_aspect_ratio: block.settings.image_ratio,
                                       show_secondary_image: false,

@@ -1,3 +1,7 @@
+<!-- Bold: Memberships (collection) -->
+{% include 'bold_mem_helper' with 'collection' %}
+<!-- end Bold code -->
+
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
@@ -152,12 +156,17 @@
               "
             >
               {%- for product in collection.products -%}
+                <!-- Bold: Memberships (collection products) -->
+{% include 'bold-memberships-product' %}
+{% if bold_hide_item == true %}
+{% continue %}{% endif %}
+<!-- end Bold code -->
                 {% assign lazy_load = false %}
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
                 <li class="grid__item">
-                  {% render 'card-product',
+                  {% include 'card-product',
                     card_product: product,
                     media_aspect_ratio: section.settings.image_ratio,
                     show_secondary_image: section.settings.show_secondary_image,

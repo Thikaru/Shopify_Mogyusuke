@@ -15,6 +15,19 @@
           "settings": {
           }
         },
+        "mxpr-average-rating": {
+          "type": "shopify:\/\/apps\/prime-review\/blocks\/mxpr-average-rating\/f16f27f6-be6f-4f94-921b-9a297092286b",
+          "settings": {
+            "stars_fill_color": "#ffd900",
+            "star_size": 24,
+            "padding_x": 0,
+            "padding_y": 0,
+            "show_count": true,
+            "count_caption_prefix": "(",
+            "count_caption_suffix": ")",
+            "product": "{{product}}"
+          }
+        },
         "e27ea8ec-cca1-4bb6-a1e6-6f36fe164ce1": {
           "type": "text",
           "settings": {
@@ -38,6 +51,36 @@
           "settings": {
           }
         },
+        "4db7c15f-c67c-4943-9c84-4e80d77ab673": {
+          "type": "shopify:\/\/apps\/all-in-gift\/blocks\/app-block-product\/14c78036-27a0-4098-a9e3-c3f1525dedff",
+          "settings": {
+            "font_color": "#000000",
+            "secondary_font_color": "#5570E9",
+            "font_size": 14,
+            "checkout_button_text": "購入手続きへ",
+            "checkout_button_text_color": "#FFFFFF",
+            "checkout_button_color": "#000000",
+            "primary_button_color": "#5570E9",
+            "primary_button_text_color": "#FFFFFF",
+            "secondary_button_color": "#FFFFFF",
+            "secondary_button_text_color": "#5570E9",
+            "button_radius": 5,
+            "gift_setting_button_text": "ギフト設定",
+            "gift_setting_cancel_button_text": "ギフト設定をキャンセルする",
+            "icon_show": "true",
+            "gift_radio_text": "指定の住所に贈る",
+            "gift_checkbox_text": "ギフト配送を希望する",
+            "e_gift_radio_text": "住所を知らない相手にeギフトで贈る",
+            "giver_name_label_text": "贈り主の名前を入力してください",
+            "header_text": "お届け方法",
+            "e_gift_description_text": "相手の住所を知らなくても、ギフトを贈れるサービスです。 購入後に発行される、受け取り用のURLをLINEやSNSなどを使ってお相手にお送りください。",
+            "e_gift_description_color": "#000000",
+            "e_gift_description_url": "",
+            "original_color_enable": "true",
+            "other_item": "false",
+            "hidden_elements": ""
+          }
+        },
         "5080f626-da77-4cc6-848e-1a64d5a8c883": {
           "type": "shopify:\/\/apps\/\/blocks\/app-block\/67cce3d8-a1e5-43f3-8d2d-0c320d8c46e7",
           "settings": {
@@ -51,6 +94,19 @@
             "show_dynamic_checkout": true
           }
         },
+        "mxpr-favorites": {
+          "type": "shopify:\/\/apps\/prime-review\/blocks\/mxpr-favorites\/f16f27f6-be6f-4f94-921b-9a297092286b",
+          "settings": {
+            "heading": "",
+            "add_message": "",
+            "exist_message": "",
+            "forbidden_alert": "",
+            "view_favorites": "",
+            "button_class": "button\nbutton--full-width\nbutton--secondary",
+            "additional_style": "",
+            "product": "{{product}}"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -61,19 +117,37 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "d3eba01d-7ca2-4e05-9568-ac004aa7f831": {
+          "type": "shopify:\/\/apps\/infinite-options\/blocks\/app-block-price\/7e73b6f9-82b0-45f5-9b9b-04f446ba1a9b",
+          "settings": {
+            "color": "#000000",
+            "font": "Assistant, sans-serif",
+            "font_size": "18px"
+          }
+        },
+        "e0d9e8a2-ed79-4ba5-b19e-cc70598b385e": {
+          "type": "shopify:\/\/apps\/infinite-options\/blocks\/app-block\/7e73b6f9-82b0-45f5-9b9b-04f446ba1a9b",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "vendor",
         "title",
+        "mxpr-average-rating",
         "e27ea8ec-cca1-4bb6-a1e6-6f36fe164ce1",
         "price",
         "variant_picker",
         "quantity_selector",
+        "4db7c15f-c67c-4943-9c84-4e80d77ab673",
         "5080f626-da77-4cc6-848e-1a64d5a8c883",
         "buy_buttons",
+        "mxpr-favorites",
         "description",
-        "share"
+        "share",
+        "d3eba01d-7ca2-4e05-9568-ac004aa7f831",
+        "e0d9e8a2-ed79-4ba5-b19e-cc70598b385e"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -88,6 +162,71 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
+      }
+    },
+    "mxpr-qanda": {
+      "type": "apps",
+      "blocks": {
+        "mxpr_qanda_block": {
+          "type": "shopify:\/\/apps\/prime-review\/blocks\/mxpr-qanda\/f16f27f6-be6f-4f94-921b-9a297092286b",
+          "settings": {
+            "border_color": "#dddddd",
+            "border_size": 0,
+            "border_radius": 5,
+            "margin_y": 0,
+            "margin_x": 0,
+            "margin_auto": true,
+            "padding_y": 20,
+            "padding_x": 20,
+            "heading": "Q&A",
+            "title_size": 24,
+            "additional_style": "",
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "mxpr_qanda_block"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "mxpr-product-reviews": {
+      "type": "apps",
+      "blocks": {
+        "mxpr_product_review_block": {
+          "type": "shopify:\/\/apps\/prime-review\/blocks\/mxpr-product-reviews\/f16f27f6-be6f-4f94-921b-9a297092286b",
+          "settings": {
+            "list_count": 5,
+            "load_more_text": "",
+            "stars_fill_color": "#ffd900",
+            "star_size": 24,
+            "border_color": "#dddddd",
+            "border_size": 0,
+            "border_radius": 5,
+            "margin_y": 0,
+            "margin_x": 0,
+            "margin_auto": true,
+            "padding_y": 20,
+            "padding_x": 20,
+            "heading": "",
+            "title_size": 24,
+            "no_reviews_action_text": "",
+            "existing_reviews_action_text": "",
+            "best_review_label": "",
+            "forbidden_alert": "",
+            "show_detail": true,
+            "additional_style": "",
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "mxpr_product_review_block"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "related-products": {
@@ -112,11 +251,20 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "169716290871e23be1": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
+    "mxpr-qanda",
+    "mxpr-product-reviews",
     "related-products",
-    "1682409919a9cbd7eb"
+    "1682409919a9cbd7eb",
+    "169716290871e23be1"
   ]
 }

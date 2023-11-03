@@ -1,3 +1,7 @@
+<!-- Bold: Memberships (accounts) -->
+{% include 'bold-memberships-salt' %}
+<!-- end Bold code -->
+
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
@@ -147,6 +151,10 @@
       <a href="{{ routes.account_addresses_url }}">
         {{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})
       </a>
+
+      <!-- Bold: Memberships (manage memberships) -->
+<p><a href="/apps/memberships/accountDetails/?id={{customer.id}}&h={{bold_memberships_hash}}">Manage Memberships</a></p>
+<!-- end Bold code -->
     </div>
   </div>
 </div>

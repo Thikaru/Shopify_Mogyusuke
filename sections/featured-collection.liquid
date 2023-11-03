@@ -1,3 +1,7 @@
+<!-- Bold: Memberships (collection) -->
+{% include 'bold_mem_helper' with 'collection' %}
+<!-- end Bold code -->
+
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-rte.css' | asset_url | stylesheet_tag }}
@@ -78,7 +82,7 @@
             id="Slide-{{ section.id }}-{{ forloop.index }}"
             class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}"
           >
-            {% render 'card-product',
+            {% include 'card-product',
               card_product: product,
               media_aspect_ratio: section.settings.image_ratio,
               show_secondary_image: section.settings.show_secondary_image,
@@ -91,7 +95,7 @@
         {%- else -%}
           {%- for i in (1..4) -%}
             <li class="grid__item">
-              {% render 'card-product', show_vendor: section.settings.show_vendor %}
+              {% include 'card-product', show_vendor: section.settings.show_vendor %}
             </li>
           {%- endfor -%}
         {%- endfor -%}

@@ -1,3 +1,9 @@
+<!-- Bold: Memberships (collection products) -->
+{% include 'bold-memberships-product' %}
+{% if bold_hide_item == true %}
+{% continue %}{% endif %}
+<!-- end Bold code -->
+
 {% comment %}
   Renders a product card
 
@@ -196,9 +202,26 @@
               </p>
             {%- endif -%}
 
+  <!-- Bold: Memberships (collection/product prices) -->
+{% assign bold_mem = false %}{% assign bold_hide = false %}
+{% for bold_rule in product.metafields.bold_mem_price %}
+	{% if customer.tags contains bold_rule.first %}
+      {% if bold_rule.last == "hide" %}{% assign bold_tag = bold_rule.first %}{% assign bold_hide = true %}{% break %}{% endif %}{% if bold_rule.last == "show" %}{% assign bold_hide = false %}{% break %}{% endif %}
+    {% else %}{% if bold_rule.last contains "show" %}{% assign bold_tag = bold_rule.first %}{% assign bold_hide = true %}{% elsif bold_rule.last contains "hide" %}{% assign bold_hide = false %}{% endif %}{% endif %}
+{% endfor %}{% if bold_hide == true %}{% assign bold_noaccess_snippet = 'bold-memberships-noaccess-' | append: bold_tag %}{% else %}
             {% render 'price', product: card_product, price_class: '' %}
+  {% endif %}
+<!-- end Bold code -->
           </div>
         </div>
+
+  <!-- Bold: Memberships (add to cart button) -->
+{% assign bold_mem = false %}{% assign bold_hide = false %}
+{% for bold_rule in product.metafields.bold_mem_addtocart %}
+	{% if customer.tags contains bold_rule.first %}
+      {% if bold_rule.last == "hide" %}{% assign bold_tag = bold_rule.first %}{% assign bold_hide = true %}{% break %}{% endif %}{% if bold_rule.last == "show" %}{% assign bold_hide = false %}{% break %}{% endif %}
+    {% else %}{% if bold_rule.last contains "show" %}{% assign bold_tag = bold_rule.first %}{% assign bold_hide = true %}{% elsif bold_rule.last contains "hide" %}{% assign bold_hide = false %}{% endif %}{% endif %}
+{% endfor %}{% if bold_hide == true %}{% assign bold_noaccess_snippet = 'bold-memberships-noaccess-' | append: bold_tag %} {% else %}
         {%- if show_quick_add -%}
           <div class="quick-add no-js-hidden">
             {%- liquid
@@ -313,6 +336,8 @@
             {%- endif -%}
           </div>
         {%- endif -%}
+  {% endif %}
+<!-- end Bold code -->
         <div class="card__badge {{ settings.badge_position }}">
           {%- if card_product.available == false -%}
             <span

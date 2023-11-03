@@ -78,6 +78,9 @@
               </h2>
               <ul id="predictive-search-results-products-list" class="predictive-search__results-list list-unstyled" role="group" aria-labelledby="predictive-search-products">
                 {%- for product in predictive_search.resources.products -%}
+                  <!-- Bold: Memberships (search) -->
+{% include 'bold_mem_helper' with 'search' %}
+<!-- end Bold code -->
                   <li id="predictive-search-option-product-{{ forloop.index }}" class="predictive-search__list-item" role="option" aria-selected="false">
                     <a href="{{ product.url }}" class="predictive-search__item predictive-search__item--link-with-thumbnail link link--text" tabindex="-1">
                       {%- if product.featured_media != blank -%}
@@ -90,9 +93,19 @@
                         {%- endif -%}
                         <p class="predictive-search__item-heading h5">{{ product.title }}
                         </p>
+
+                        <!-- Bold: Memberships (collection/product prices) -->
+{% assign bold_mem = false %}{% assign bold_hide = false %}
+{% for bold_rule in product.metafields.bold_mem_price %}
+	{% if customer.tags contains bold_rule.first %}
+      {% if bold_rule.last == "hide" %}{% assign bold_tag = bold_rule.first %}{% assign bold_hide = true %}{% break %}{% endif %}{% if bold_rule.last == "show" %}{% assign bold_hide = false %}{% break %}{% endif %}
+    {% else %}{% if bold_rule.last contains "show" %}{% assign bold_tag = bold_rule.first %}{% assign bold_hide = true %}{% elsif bold_rule.last contains "hide" %}{% assign bold_hide = false %}{% endif %}{% endif %}
+{% endfor %}{% if bold_hide == true %}{% assign bold_noaccess_snippet = 'bold-memberships-noaccess-' | append: bold_tag %}{% else %}
                         {%- if settings.predictive_search_show_price -%}
                           {% render 'price', product: product, use_variant: true, show_badges: false %}
                         {%- endif -%}
+  {% endif %}
+<!-- end Bold code -->
                       </div>
                     </a>
                   </li>
