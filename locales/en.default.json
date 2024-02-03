@@ -40,8 +40,8 @@
       "reset": "Clear search term"
     },
     "cart": {
-      "view": "View my cart ({{ count }})",
-      "view_empty_cart": "View my cart",
+      "view": "View cart ({{ count }})",
+      "view_empty_cart": "View cart",
       "item_added": "Item added to your cart"
     },
     "share": {
@@ -106,7 +106,7 @@
   },
   "products": {
     "product": {
-      "add_to_cart": "Add to cart",
+      "add_to_cart": "カートに追加する",
       "choose_options": "Choose options",
       "choose_product_options": "Choose options for {{ product_name }}",
       "description": "Description",
@@ -130,14 +130,22 @@
         "play_video": "Play video"
       },
       "quantity": {
-        "label": "Quantity",
+        "label": "数量",
         "input_label": "Quantity for {{ product }}",
         "increase": "Increase quantity for {{ product }}",
         "decrease": "Decrease quantity for {{ product }}",
         "minimum_of": "Minimum of {{ quantity }}",
         "maximum_of": "Maximum of {{ quantity }}",
         "multiples_of": "Increments of {{ quantity }}",
-        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}<\/span> in cart"
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}<\/span> in cart",
+        "note": "View quantity rules"
+      },
+      "volume_pricing": {
+        "title": "Volume Pricing",
+        "note": "Volume pricing available",
+        "minimum": "{{ quantity }}+",
+        "price_at_each": "at {{ price }}\/ea",
+        "price_range": "{{ minimum }} - {{ maximum }}"
       },
       "pickup_availability": {
         "view_store_info": "View store information",
@@ -155,13 +163,13 @@
         "unit_price": "Unit price"
       },
       "share": "Share this product",
-      "sold_out": "Sold out",
+      "sold_out": "売り切れ",
       "unavailable": "Unavailable",
       "vendor": "Vendor",
       "value_unavailable": "{{ option_value }} - Unavailable",
       "variant_sold_out_or_unavailable": "Variant sold out or unavailable",
       "video_exit_message": "{{ title }} opens full screen video in same window.",
-      "view_full_details": "View full details",
+      "view_full_details": "詳細表示",
       "xr_button": "View in your space",
       "xr_button_label": "View in your space, loads item in augmented reality window",
       "include_taxes": "Tax included.",
@@ -236,14 +244,14 @@
     },
     "contact": {
       "form": {
-        "title": "Contact form",
-        "name": "Name",
-        "email": "Email",
-        "phone": "Phone number",
-        "comment": "Comment",
-        "send": "Send",
-        "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
-        "error_heading": "Please adjust the following:"
+        "title": "お問い合わせ",
+        "name": "お名前",
+        "email": "メールアドレス",
+        "phone": "電話番号",
+        "comment": "コメント",
+        "send": "送信",
+        "post_success": " お問い合わせいただきありがとうございます。できるだけ早くご連絡させていただきます。",
+        "error_heading": "下記を修正してください。"
       }
     },
     "404": {
@@ -252,6 +260,13 @@
     }
   },
   "sections": {
+    "announcements": {
+      "previous_announcement": "Previous announcement",
+      "next_announcement": "Next announcement",
+      "carousel": "Carousel",
+      "announcement": "Announcement",
+      "announcement_bar": "Announcement bar"
+    },
     "header": {
       "announcement": "Announcement",
       "menu": "Menu",
@@ -264,17 +279,17 @@
       "title": "Your cart",
       "caption": "Cart items",
       "remove_title": "Remove {{ title }}",
-      "subtotal": "Subtotal",
-      "new_subtotal": "New subtotal",
+      "estimated_total": "Estimated total",
+      "new_estimated_total": "New estimated total",
       "note": "Order special instructions",
       "checkout": "Check out",
       "empty": "Your cart is empty",
       "cart_error": "There was an error while updating your cart. Please try again.",
       "cart_quantity_error_html": "You can only add {{ quantity }} of this item to your cart.",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping<\/a> calculated at checkout",
-      "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
-      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
-      "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes, Discounts and <a href=\"{{ link }}\">shipping<\/a> calculated at checkout",
+      "taxes_included_but_shipping_at_checkout": "Tax included and shipping and discounts calculated at checkout",
+      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping<\/a> and discounts calculated at checkout.",
+      "taxes_and_shipping_at_checkout": "Taxes, discounts and shipping calculated at checkout",
       "headings": {
         "product": "Product",
         "price": "Price",
@@ -322,6 +337,27 @@
     },
     "page": {
       "title": "Page title"
+    },
+    "quick_order_list": {
+      "product_total": "Product subtotal",
+      "view_cart": "View cart",
+      "each": "{{ money }}\/ea",
+      "product": "Product",
+      "variant": "Variant",
+      "variant_total": "Variant total",
+      "items_added": {
+        "one": "{{ quantity }} item added",
+        "other": "{{ quantity }} items added"
+      },
+      "items_removed": {
+        "one": "{{ quantity }} item removed",
+        "other": "{{ quantity }} items removed"
+      },
+      "product_variants": "Product variants",
+      "total_items": "Total items",
+      "remove_all_items_confirmation": "Remove all {{ quantity }} items from your cart?",
+      "remove_all": "Remove all",
+      "cancel": "Cancel"
     }
   },
   "localization": {
@@ -442,17 +478,63 @@
   },
   "gift_cards": {
     "issued": {
-      "title": "Here's your {{ value }} gift card for {{ shop }}!",
+      "how_to_use_gift_card": "Use the gift card code online or QR code in-store",
+      "title": "Here's your {{ value }} gift card balance for {{ shop }}!",
       "subtext": "Your gift card",
       "gift_card_code": "Gift card code",
-      "shop_link": "Continue shopping",
-      "remaining_html": "Remaining {{ balance }}",
+      "shop_link": "Visit online store",
       "add_to_apple_wallet": "Add to Apple Wallet",
       "qr_image_alt": "QR code — scan to redeem gift card",
-      "copy_code": "Copy code",
-      "expired": "Expired",
+      "copy_code": "Copy gift card code",
+      "expiration_date": "Expires {{ expires_on }}",
       "copy_code_success": "Code copied successfully",
-      "print_gift_card": "Print"
+      "expired": "Expired"
+    }
+  },
+  "recipient": {
+    "form": {
+      "checkbox": "I want to send this as a gift",
+      "expanded": "Gift card recipient form expanded",
+      "collapsed": "Gift card recipient form collapsed",
+      "email_label": "Recipient email",
+      "email_label_optional_for_no_js_behavior": "Recipient email (optional)",
+      "email": "Email",
+      "name_label": "Recipient name (optional)",
+      "name": "Name",
+      "message_label": "Message (optional)",
+      "message": "Message",
+      "max_characters": "{{ max_chars }} characters max",
+      "send_on": "YYYY-MM-DD",
+      "send_on_label": "Send on (optional)"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "stock": {
+        "sold_out_label": "売り切れ",
+        "quantity_column_header": "数量"
+      },
+      "throttle": {
+        "merchandise": {
+          "sold_out": "売り切れ"
+        }
+      },
+      "general": {
+        "expand_notice_label": "詳細表示"
+      },
+      "post_purchase": {
+        "components": {
+          "expand": "詳細表示"
+        }
+      }
+    },
+    "challenge": {
+      "message": " 続行するには、あなたがロボットではないことをお知らせください。"
+    }
+  },
+  "customer_accounts": {
+    "ui_components": {
+      "expandNotification": "詳細表示"
     }
   }
 }

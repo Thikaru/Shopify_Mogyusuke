@@ -1,181 +1,208 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "3004cdad-d26a-47a8-8b85-ba5111ac9b4b": {
+      "type": "slideshow",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "template--20727444275506__3004cdad-d26a-47a8-8b85-ba5111ac9b4b-slide-1": {
+          "type": "slide",
           "settings": {
-            "heading": "もぎゅすけの里",
-            "heading_size": "h0"
+            "image": "shopify:\/\/shop_images\/1_97885374-6b02-4228-96d4-0ba8de10a37c.jpg",
+            "heading": "<strong>COON95゜<\/strong>",
+            "heading_size": "h0",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-right",
+            "show_text_box": false,
+            "text_alignment": "right",
+            "image_overlay_opacity": 0,
+            "color_scheme": "inverse",
+            "text_alignment_mobile": "center"
           }
         },
-        "text": {
-          "type": "text",
+        "template--20727444275506__3004cdad-d26a-47a8-8b85-ba5111ac9b4b-slide-2": {
+          "type": "slide",
           "settings": {
-            "text": "かわいいもぎゅすけたちの画像を販売しているサイトです！！！",
-            "text_style": "body"
+            "image": "shopify:\/\/shop_images\/2_a87a1dd3-6033-424f-aff8-3f34ea0f873b.jpg",
+            "heading": "<strong>COON95゜<\/strong>",
+            "heading_size": "h0",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "top-left",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "inverse",
+            "text_alignment_mobile": "center"
           }
         },
-        "button": {
-          "type": "buttons",
+        "f1e49d0c-49c4-4756-b56f-260f6dc7c485": {
+          "type": "slide",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "image": "shopify:\/\/shop_images\/3.jpg",
+            "heading": "<strong>COON95゜<\/strong>",
+            "heading_size": "h0",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "inverse",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "6f8a8b4a-ff55-4609-954f-0437b9eec70b": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4.jpg",
+            "heading": "<strong>COON95゜<\/strong>",
+            "heading_size": "h0",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "top-left",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "inverse",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "bf5c0aa0-6b6d-4970-9ede-6d4744c7225d": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5.jpg",
+            "heading": "<strong>COON95゜<\/strong>",
+            "heading_size": "h0",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "inverse",
+            "text_alignment_mobile": "center"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "button"
+        "template--20727444275506__3004cdad-d26a-47a8-8b85-ba5111ac9b4b-slide-1",
+        "template--20727444275506__3004cdad-d26a-47a8-8b85-ba5111ac9b4b-slide-2",
+        "f1e49d0c-49c4-4756-b56f-260f6dc7c485",
+        "6f8a8b4a-ff55-4609-954f-0437b9eec70b",
+        "bf5c0aa0-6b6d-4970-9ede-6d4744c7225d"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/1.jpg",
-        "image_2": "shopify:\/\/shop_images\/1_22d0ed4c-167c-4b69-a146-c676368af09d.jpg",
-        "image_overlay_opacity": 40,
-        "image_height": "medium",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "accent-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "おすすめ商品",
-        "heading_size": "h1",
-        "description": "<p>今月おすすめのもぎゅすけたちの画像たちです！！あなたはこの可愛さで買うのを我慢することができるのか！？<\/p>",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "もぎゅすけハウス",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "e324fea4-c2c4-4222-9fcf-9ca7206aba8a": {
-      "type": "image-with-text",
+    "af4c5c8d-1b45-4cb4-98a7-fac88684f9ea": {
+      "type": "rich-text",
       "blocks": {
-        "template--18330196738370__e324fea4-c2c4-4222-9fcf-9ca7206aba8a-167924350750dc9845-0": {
+        "template--20727444275506__af4c5c8d-1b45-4cb4-98a7-fac88684f9ea-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "<strong>「いつものサウナをいつまでも」<\/strong>",
             "heading_size": "h1"
           }
         },
-        "template--18330196738370__e324fea4-c2c4-4222-9fcf-9ca7206aba8a-167924350750dc9845-1": {
+        "template--20727444275506__af4c5c8d-1b45-4cb4-98a7-fac88684f9ea-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--18330196738370__e324fea4-c2c4-4222-9fcf-9ca7206aba8a-167924350750dc9845-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
+            "text": "<p><strong>アフターサウナゼリーで、サウナの効果を最大化。<\/strong><\/p>"
           }
         }
       },
       "block_order": [
-        "template--18330196738370__e324fea4-c2c4-4222-9fcf-9ca7206aba8a-167924350750dc9845-0",
-        "template--18330196738370__e324fea4-c2c4-4222-9fcf-9ca7206aba8a-167924350750dc9845-1",
-        "template--18330196738370__e324fea4-c2c4-4222-9fcf-9ca7206aba8a-167924350750dc9845-2"
+        "template--20727444275506__af4c5c8d-1b45-4cb4-98a7-fac88684f9ea-heading-1",
+        "template--20727444275506__af4c5c8d-1b45-4cb4-98a7-fac88684f9ea-text-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/2.jpg",
-        "height": "medium",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 64,
+        "padding_bottom": 64
       }
     },
-    "035c7037-261b-44f7-a755-fcfd24a68252": {
+    "71c85c7a-24da-4708-93aa-fec1eaa01426": {
       "type": "featured-product",
       "blocks": {
-        "template--21187043459394__035c7037-261b-44f7-a755-fcfd24a68252-text-1": {
+        "template--20727444275506__71c85c7a-24da-4708-93aa-fec1eaa01426-text-1": {
           "type": "text",
           "settings": {
             "text": "{{ section.settings.product.vendor }}",
             "text_style": "uppercase"
           }
         },
-        "template--21187043459394__035c7037-261b-44f7-a755-fcfd24a68252-title-1": {
+        "template--20727444275506__71c85c7a-24da-4708-93aa-fec1eaa01426-title-1": {
           "type": "title",
           "settings": {
             "heading_size": "h1"
           }
         },
-        "template--21187043459394__035c7037-261b-44f7-a755-fcfd24a68252-price-1": {
+        "template--20727444275506__71c85c7a-24da-4708-93aa-fec1eaa01426-price-1": {
           "type": "price",
           "settings": {
           }
         },
-        "template--21187043459394__035c7037-261b-44f7-a755-fcfd24a68252-variant_picker-1": {
+        "template--20727444275506__71c85c7a-24da-4708-93aa-fec1eaa01426-variant_picker-1": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "button"
           }
         },
-        "template--21187043459394__035c7037-261b-44f7-a755-fcfd24a68252-quantity_selector-1": {
+        "template--20727444275506__71c85c7a-24da-4708-93aa-fec1eaa01426-quantity_selector-1": {
           "type": "quantity_selector",
           "settings": {
           }
         },
-        "template--21187043459394__035c7037-261b-44f7-a755-fcfd24a68252-buy_buttons-1": {
+        "template--20727444275506__71c85c7a-24da-4708-93aa-fec1eaa01426-buy_buttons-1": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
           }
         },
-        "template--21187043459394__035c7037-261b-44f7-a755-fcfd24a68252-share-1": {
+        "template--20727444275506__71c85c7a-24da-4708-93aa-fec1eaa01426-share-1": {
           "type": "share",
           "settings": {
-            "share_label": "Share"
+            "share_label": "共有"
           }
         }
       },
       "block_order": [
-        "template--21187043459394__035c7037-261b-44f7-a755-fcfd24a68252-text-1",
-        "template--21187043459394__035c7037-261b-44f7-a755-fcfd24a68252-title-1",
-        "template--21187043459394__035c7037-261b-44f7-a755-fcfd24a68252-price-1",
-        "template--21187043459394__035c7037-261b-44f7-a755-fcfd24a68252-variant_picker-1",
-        "template--21187043459394__035c7037-261b-44f7-a755-fcfd24a68252-quantity_selector-1",
-        "template--21187043459394__035c7037-261b-44f7-a755-fcfd24a68252-buy_buttons-1",
-        "template--21187043459394__035c7037-261b-44f7-a755-fcfd24a68252-share-1"
+        "template--20727444275506__71c85c7a-24da-4708-93aa-fec1eaa01426-text-1",
+        "template--20727444275506__71c85c7a-24da-4708-93aa-fec1eaa01426-title-1",
+        "template--20727444275506__71c85c7a-24da-4708-93aa-fec1eaa01426-price-1",
+        "template--20727444275506__71c85c7a-24da-4708-93aa-fec1eaa01426-variant_picker-1",
+        "template--20727444275506__71c85c7a-24da-4708-93aa-fec1eaa01426-quantity_selector-1",
+        "template--20727444275506__71c85c7a-24da-4708-93aa-fec1eaa01426-buy_buttons-1",
+        "template--20727444275506__71c85c7a-24da-4708-93aa-fec1eaa01426-share-1"
       ],
       "settings": {
-        "product": "starappsvarientimage",
-        "color_scheme": "background-1",
+        "product": "coon95",
+        "color_scheme": "",
         "secondary_background": false,
         "media_size": "medium",
         "constrain_to_viewport": true,
@@ -187,12 +214,172 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "5978f738-75f6-40f9-a5dc-4a7f7e20a3fa": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--20923742748978__5978f738-75f6-40f9-a5dc-4a7f7e20a3fa-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6494d6da29783b18764ea03314c92661_617f0069-e624-4608-b3bc-a1610796570c.png",
+            "title": "<strong>リカバリー成分の配合<\/strong>",
+            "text": "<p>サウナーがリカバリーのために摂取している成分を配合し、サウナで受けたダメージのリカバリーが早い<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20923742748978__5978f738-75f6-40f9-a5dc-4a7f7e20a3fa-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/d45e2ebfc47c760f0ec4116e0a6a1276_b7fbbf24-9ff2-4525-b31b-f2c29b045005.png",
+            "title": "<strong>失われた成分と電解質の素早い補給<\/strong>",
+            "text": "<p>ゼリータイプでの提供のため、体内への吸収も早く失われた成分と電解質の素早い補給が可能<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20923742748978__5978f738-75f6-40f9-a5dc-4a7f7e20a3fa-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/e466cde84c52453d7fa44c3f936ecf97_688358f3-3154-469d-8378-b8e2198d0587.png",
+            "title": "<strong>胃への負担も軽減<\/strong>",
+            "text": "<p>冷えた食べ物や飲み物の摂取は、胃への負担がかかります。だから、常温・適量設計！<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20923742748978__5978f738-75f6-40f9-a5dc-4a7f7e20a3fa-column-1",
+        "template--20923742748978__5978f738-75f6-40f9-a5dc-4a7f7e20a3fa-column-2",
+        "template--20923742748978__5978f738-75f6-40f9-a5dc-4a7f7e20a3fa-column-3"
+      ],
+      "settings": {
+        "title": "<strong>製品の特長<\/strong>",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "432c2e3f-9ce5-475f-8831-40cf899e724d": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--20925382295858__432c2e3f-9ce5-475f-8831-40cf899e724d-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "template--20925382295858__432c2e3f-9ce5-475f-8831-40cf899e724d-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>たくさん汗をかいていますか？<\/strong><\/p><p><strong>しっかり呼吸してますか？<\/strong><\/p><p><strong>サウナハットは使ってますか？<\/strong><\/p><p><strong>よく眠れていますか？<\/strong><\/p><p><strong>実は、１回のサウナで、３００〜４００mlの水分のほかに、ミネラルやビタミンが失われます。<\/strong><\/p><p><strong>水分のみの補給では、失われた栄養素をカバーできず、逆に身体に疲れが蓄積されていってしまいます。<\/strong><\/p><p><strong>COON95°は自然由来の厳選素材で、サウナ後のリカバリーをサポートし、あなたのサ活を応援します。<\/strong><\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--20925382295858__432c2e3f-9ce5-475f-8831-40cf899e724d-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "詳細表示",
+            "button_link": "shopify:\/\/products\/coon95",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--20925382295858__432c2e3f-9ce5-475f-8831-40cf899e724d-heading-1",
+        "template--20925382295858__432c2e3f-9ce5-475f-8831-40cf899e724d-text-1",
+        "template--20925382295858__432c2e3f-9ce5-475f-8831-40cf899e724d-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/3_f68ac024-44ed-47c5-b965-250a6213aa9c.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    },
+    "c045ebfd-07bf-4bee-af8b-badfc33d56b7": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--20727444275506__c045ebfd-07bf-4bee-af8b-badfc33d56b7-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_424682c7-6f87-4f75-bcf6-6b1fdeeb24de.jpg",
+            "title": "<strong>匿名　年齢57歳　男性・会社経営　サウナ歴15年・週１程度　東京在住<\/strong>",
+            "text": "<p>仕事の関係でサウナに入るようになったのが15年程前でした。年齢のせいか、ここ数年、サウナ翌日の疲労感の為、通う頻度が落ちてしまいました。しかし、サウナゼリーを飲用したら翌日の疲労感を感じなくなった。毎回飲用しているが、やはり、翌日が違う。今では、これなしではサウナに行けない相棒です。<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20727444275506__c045ebfd-07bf-4bee-af8b-badfc33d56b7-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_aa622902-9985-4870-82b3-b293cba1ba1a.jpg",
+            "title": "<strong>サウナ仲間A氏 年齢40代前半　男性・温浴施設専門問屋勤務　週１程度　埼玉在住<\/strong>",
+            "text": "<p>サウナに入る目的は、思いっきり汗をかくと身体の中から悪い物が出ていくような気がするのが好きで通っている。サウナゼリーは美味しく頂いた。効果に関して、ゼリーのことは翌日には忘れていて、実感はないけど美味しいから続けている！<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20727444275506__c045ebfd-07bf-4bee-af8b-badfc33d56b7-column-1",
+        "template--20727444275506__c045ebfd-07bf-4bee-af8b-badfc33d56b7-column-2"
+      ],
+      "settings": {
+        "title": "<strong>お客様の声<\/strong>",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "2ba71f9f-572c-4bb5-8bab-1217a1ad8ac7": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "<strong>お問い合わせ<\/strong>",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection",
-    "e324fea4-c2c4-4222-9fcf-9ca7206aba8a",
-    "035c7037-261b-44f7-a755-fcfd24a68252"
+    "3004cdad-d26a-47a8-8b85-ba5111ac9b4b",
+    "af4c5c8d-1b45-4cb4-98a7-fac88684f9ea",
+    "71c85c7a-24da-4708-93aa-fec1eaa01426",
+    "5978f738-75f6-40f9-a5dc-4a7f7e20a3fa",
+    "432c2e3f-9ce5-475f-8831-40cf899e724d",
+    "c045ebfd-07bf-4bee-af8b-badfc33d56b7",
+    "2ba71f9f-572c-4bb5-8bab-1217a1ad8ac7"
   ]
 }

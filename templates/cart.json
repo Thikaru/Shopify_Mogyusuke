@@ -26,6 +26,8 @@
         "buttons"
       ],
       "settings": {
+        "padding_top": 20,
+        "padding_bottom": 40
       }
     }
   },
