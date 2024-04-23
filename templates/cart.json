@@ -31,7 +31,7 @@
     "custom_liquid_7KAnKW": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<button onclick=\"printPage()\">この画面を印刷する<\/button>\n\n<script>\n@media print{\n  \/* 印刷用のスタイルを指定 *\/\n}\n<\/script>\n\n<script>\nfunction printPage(){\nwindow.print();\n}\n<\/script>",
+        "custom_liquid": "<button class=\"print_button\" onclick=\"printPage()\">この画面を印刷する<\/button>\n\n<style>\n@media print{\n  \/* 印刷用のスタイルを指定 *\/\n}\n\n\na.print_button {\n\tdisplay: block;\n\ttext-align: center;\n\tvertical-align: middle;\n\ttext-decoration: none;\n\twidth: 120px;\n\tmargin: auto;\n\tpadding: 1rem 4rem;\n\tfont-weight: bold;\n\tborder: 2px solid #27acd9;\n\tbackground: #27acd9;\n\tcolor: #fff;\n\ttransition: 0.5s;\n}\na.print_button:hover {\n\tcolor: #27acd9;\n\tbackground: #fff;\n}\n\n<\/style>\n\n<script>\nfunction printPage(){\nwindow.print();\n}\n<\/script>",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
