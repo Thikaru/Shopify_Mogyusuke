@@ -31,7 +31,7 @@
     "custom_liquid_7KAnKW": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<button onclick=\"printPage\">tetete<\/button>\n\n<script>\nfunction printPage(){\nvar currentUrl = window.location.href;\nprint_page = window.open(currentUrl);\nprint_page.print();\n}\n<\/script>",
+        "custom_liquid": "<button onclick=\"printPage()\">tetete<\/button>\n\n<script>\nfunction printPage(){\nwindow.print();\nvar currentUrl = window.location.href;\nprint_page = window.open(currentUrl);\nprint_page.print();\n}\n<\/script>",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
