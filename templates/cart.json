@@ -27,10 +27,20 @@
       ],
       "settings": {
       }
+    },
+    "custom_liquid_7KAnKW": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<a href=\"https:\/\/documents-app.mixlogue.jp\/print?shop=xn-x8jgx6nqa4rzenh&t=f299d15&u={{customer.id}}&o={{ id }}&locale=ja\">請求書を表示する<\/a>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "cart-items",
-    "cart-footer"
+    "cart-footer",
+    "custom_liquid_7KAnKW"
   ]
 }
